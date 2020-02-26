@@ -1,0 +1,1 @@
+My daughter plays an art game called the marker challenge.  She often does the three marker challenge.  The object is to draw a random set of coloring pencils, markers, or crayons and then create a picture using only those colors.  This program is designed to simulate choosing those random colors.

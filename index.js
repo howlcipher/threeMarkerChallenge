@@ -7,17 +7,18 @@ if (num > markerColors || num < 0){
   return 0;
 }
 let markers = []  
-for (i=0; i < num; i++){
+for (i=0; i < num;){
   let color = Math.floor(Math.random() * markerColors.length);
   //retries the process if undefined is selected in the array
   if (markerColors[color] == undefined){
-    i--
+    
     continue;
   }
   //adds the colors to the array
   markers.push(markerColors[color]);
   //removes a color chosen
   delete markerColors[color];
+  i++
 
 }
 //returns an array of colors

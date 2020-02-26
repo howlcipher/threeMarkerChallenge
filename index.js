@@ -1,8 +1,11 @@
-//colors to choose from
-
 //returns an amount of random colors to array
 function markerChallenge(num){
+
 let markerColors = ["red","blue","yellow","cyan","purple","pink","orange","green",                        "black","brown","gray"]
+if (num > markerColors || num < 0){
+  console.log("Please select a valid number")
+  return 0;
+}
 let markers = []  
 for (i=0; i < num; i++){
   let color = Math.floor(Math.random() * markerColors.length);
